@@ -17,7 +17,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("tidyverse"))
+          renv::restore()
         shell: Rscript {0}
 
       - name: Run script
